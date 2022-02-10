@@ -1,0 +1,21 @@
+@import './utils/variables';
+@import './base/reset';
+@import './base/common';
+@import './utils/hidden';
+
+//components
+
+@import './components/container';
+@import './components/header';
+@import './components/hero';
+@import './components/advantages';
+@import './components/direction';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';
+
+@import './components/nav-portfolio';
+@import './components/hero-portfolio';
+
+@import './components/modal';
+@import './components/mobile-menu';
