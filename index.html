@@ -60,13 +60,13 @@
             >
           </li>
         </ul>
-      </div>
 
-      <button type="button" class="open-mob-menu" data-menu-open>
-        <svg class="open-mob-menu__svg">
-          <use href="images/svg-image/icons.svg#icon-menu_mob_version"></use>
-        </svg>
-      </button>
+        <button type="button" class="open-mob-menu" data-menu-open>
+          <svg class="open-mob-menu__svg">
+            <use href="images/svg-image/icons.svg#icon-menu_mob_version"></use>
+          </svg>
+        </button>
+      </div>
       <div class="mobile-menu is-hidden" data-menu>
         <div class="mobile-data">
           <div class="mobile-scroll">
@@ -192,15 +192,29 @@
           <ul class="list direction__list">
             <li class="direction__item">
               <div class="direction-wrap">
-                <img src="images/img-home/presentation1.jpg" alt="Создание сайтов" width="370" />
+                <img
+                  width="370"
+                  srcset="
+                    ./images/optim_ph/work1-des-1x.jpg 370w,
+                    ./images/optim_ph/work1-des-2x.jpg 740w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  src="./images/optim_ph/work1-des-1x.jpg"
+                  alt="Десктопные приложения"
+                />
                 <p class="direction-wrap__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="direction__item">
               <img
-                src="images/img-home/presentation3.jpg"
-                alt="Разработка мобильных приложений"
                 width="370"
+                srcset="
+                  ./images/optim_ph/work2-des-1x.jpg 370w,
+                  ./images/optim_ph/work2-des-2x.jpg 640w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/optim_ph/work2-des-1x.jpg"
+                alt="Разработка мобильных приложений"
               />
               <div class="direction-wrap">
                 <p class="direction-wrap__text">Мобильные приложения</p>
@@ -208,9 +222,14 @@
             </li>
             <li class="direction__item">
               <img
-                src="images/img-home/presentation2.jpg"
-                alt="Разработка интернет-магазинов"
                 width="370"
+                srcset="
+                  ./images/optim_ph/work3-des-1x.jpg 370w,
+                  ./images/optim_ph/work3-des-2x.jpg 640w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/optim_ph/work3-des-1x.jpg"
+                alt="Разработка интернет-магазинов"
               />
               <div class="direction-wrap">
                 <p class="direction-wrap__text">Дизайнерские решения</p>
@@ -227,7 +246,20 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__item">
-              <img class="team-item__img" src="images/img-home/coach1.jpg" alt="Игорь Демьяненко" />
+              <img
+                class="team-item__img"
+                srcset="
+                  ./images/optim_ph/person1-desk-270-1x.jpg 270w,
+                  ./images/optim_ph/person1-tab-354-1x.jpg  354w,
+                  ./images/optim_ph/person1-mob-450-1x.jpg  450w,
+                  ./images/optim_ph/person1-desk2x.jpg      540w,
+                  ./images/optim_ph/person1-tab-354-2x.jpg  708w,
+                  ./images/optim_ph/person1-mob-450-2x.jpg  900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/optim_ph/person1-desk-270-1x.jpg"
+                alt="Игорь Демьяненко"
+              />
               <div class="team-depiction">
                 <h3 class="team-depiction__subtitle">Игорь Демьяненко</h3>
                 <p class="team-depiction__lead" lang="en">Product Designer</p>
@@ -264,7 +296,20 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team-item__img" src="images/img-home/coach2.jpg" alt="Ольга Репина" />
+              <img
+                class="team-item__img"
+                srcset="
+                  ./images/optim_ph/person2-desk-270-1x.jpg 270w,
+                  ./images/optim_ph/person2-tab-354-1x.jpg  354w,
+                  ./images/optim_ph/person2-mob-450-1x.jpg  450w,
+                  ./images/optim_ph/person2-desk-270-2x.jpg 540w,
+                  ./images/optim_ph/person2-tab-354-2x.jpg  708w,
+                  ./images/optim_ph/person2-mob-450-2x.jpg  900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/optim_ph/person2-desk-270-1x.jpg"
+                alt="Ольга Репина"
+              />
               <div class="team-depiction">
                 <h3 class="team-depiction__subtitle">Ольга Репина</h3>
                 <p class="team-depiction__lead" lang="en">Frontend Developer</p>
@@ -302,7 +347,20 @@
             </li>
 
             <li class="team__item">
-              <img class="team-item__img" src="images/img-home/coach3.jpg" alt="Николай Тарасов" />
+              <img
+                class="team-item__img"
+                srcset="
+                  ./images/optim_ph/person3-desk-270-1x.jpg 270w,
+                  ./images/optim_ph/person3-tab-354-1x.jpg  354w,
+                  ./images/optim_ph/person3-mob-450-1x.jpg  450w,
+                  ./images/optim_ph/person3-desk-270-2x.jpg 540w,
+                  ./images/optim_ph/person3-tab-354-2x.jpg  708w,
+                  ./images/optim_ph/person3-mob-450-2x.jpg  900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/optim_ph/person3-desk-270-1x.jpg"
+                alt="Николай Тарасов"
+              />
               <div class="team-depiction">
                 <h3 class="team-depiction__subtitle">Николай Тарасов</h3>
                 <p class="team-depiction__lead" lang="en">Marketing</p>
@@ -339,7 +397,20 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team-item__img" src="images/img-home/coach4.jpg" alt="Михаил Ермаков" />
+              <img
+                class="team-item__img"
+                srcset="
+                  ./images/optim_ph/person4-desk-270-1x.jpg 270w,
+                  ./images/optim_ph/person4-tab-354-1x.jpg  354w,
+                  ./images/optim_ph/person4-mob-450-1x.jpg  450w,
+                  ./images/optim_ph/person4-desk-270-2x.jpg 540w,
+                  ./images/optim_ph/person4-tab-354-2x.jpg  708w,
+                  ./images/optim_ph/person4-mob-450-2x.jpg  900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/optim_ph/person4-desk-270-1x.jpg"
+                alt="Михаил Ермаков"
+              />
               <div class="team-depiction">
                 <h3 class="team-depiction__subtitle">Михаил Ермаков</h3>
                 <p class="team-depiction__lead" lang="en">UI Designer</p>
@@ -520,76 +591,66 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form name="modal__order-name" class="modal__order-form">
-          <b class="modal__title">Оставьте свои данные, мы вам перезвоним</b>
-          <label class="modal__form-label">
-            <span class="modal__label-text">Имя</span>
-            <input
-              type="text"
-              name="name"
-              class="modal__form-input"
-              placeholder=""
-              autofocus
-              required
-            /><svg class="modal__form-icon" width="18" height="18">
-              <use href="images/svg-image/icons.svg#icon-human"></use>
-            </svg>
-          </label>
-          <label class="modal__form-label"
-            ><span class="modal__label-text">Телефон</span
-            ><input
-              type="tel"
-              name="tel"
-              class="modal__form-input"
-              required
-              placeholder=""
-              pattern="+380"
-              minlength="10"
-              maxlength="13"
-            /><svg class="modal__form-icon" width="18" height="18">
-              <use href="images/svg-image/icons.svg#phone-modal"></use>
-            </svg>
-          </label>
-          <label class="modal__form-label"
-            ><span class="modal__label-text">Почта</span
-            ><input type="email" name="email" class="modal__form-input" placeholder="" /><svg
-              class="modal__form-icon"
-              width="18"
-              height="18"
-            >
-              <use href="images/svg-image/icons.svg#mail-modal"></use>
-            </svg>
-          </label>
-          <label class="modal__form-label"
-            ><span class="modal__label-text">Комментарий</span
-            ><textarea
-              id="comment"
-              name="comment"
-              class="modal__form-textarea"
-              rows="7"
-              placeholder="Введите текст"
-            ></textarea>
-          </label>
-          <label class="modal__form-label modal__form-label-block"
-            ><input
-              type="checkbox"
-              name="agreement"
-              class="modal__form-input agreement visually-hidden"
-              required
-            /><svg class="modal__form-icon-agreement" width="15" height="15">
-              <use href="images/svg-image/icons.svg#icon-agreement"></use></svg
-            ><span class="modal__agree-modal">Соглашаюсь с рассылкой и принимаю&nbsp;</span
-            ><a href="#" target="blank" class="link modal__link-agreement" rel="noopener noreferrer"
-              >Условия договора</a
-            >
-          </label>
-          <button type="submit" class="modal__button-modal">Отправить</button>
-        </form>
-        <button type="button" class="modal-close" data-modal-close>
-          <svg class="modal__close-btn" width="11" height="11">
+        <button data-modal-close type="button" class="modal-close">
+          <svg class="modal-close__svg" width="11" height="11">
             <use href="images/svg-image/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="modal__order-name" action="#">
+          <p class="modal-form__text">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="forms-about">
+            <label class="forms-about__label" for="user-name">Имя</label>
+            <input class="forms-about__input" type="text" name="name" id="user-name" />
+            <svg class="forms-about__svg">
+              <use href="images/svg-image/icons.svg#icon-human"></use>
+            </svg>
+          </div>
+
+          <div class="forms-about">
+            <label class="forms-about__label" for="user-tel">Телефон</label>
+            <input class="forms-about__input" name="tel" type="tel" id="user-tel" />
+            <svg class="forms-about__svg">
+              <use href="images/svg-image/icons.svg#phone-modal"></use>
+            </svg>
+          </div>
+
+          <div class="forms-about">
+            <label class="forms-about__label" for="user-mail">Почта</label>
+            <input class="forms-about__input" name="mail" type="email" id="user-mail" />
+            <svg class="forms-about__svg">
+              <use href="images/svg-image/icons.svg#mail-modal"></use>
+            </svg>
+          </div>
+
+          <div class="forms-about">
+            <label class="forms-about__label" for="comment">Коментарий</label>
+            <textarea
+              class="forms-about__comment"
+              name="comment"
+              id="comment"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="forms-agreement">
+            <input
+              name="check-box"
+              class="forms-agreement__input visually-hidden"
+              type="checkbox"
+              id="modal-agreement"
+            />
+            <label class="agreement-label" id="modal-check">
+              <span class="span-check">
+                <svg class="svg-check" width="16" height="15">
+                  <use href="images/svg-image/icons.svg#icon-agreement"></use>
+                </svg>
+              </span>
+              Соглашаюсь с рассылкой и прнимаю <a class="modal-link" href="">Условия договора</a>
+            </label>
+          </div>
+          <div class="button-modal">
+            <button class="button button-modal__about" type="submit">Отправить</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

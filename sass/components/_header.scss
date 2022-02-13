@@ -5,10 +5,12 @@
 .header__container {
   display: flex;
   align-items: center;
+  position: relative;
   @media screen and(min-width:768px) {
     display: flex;
   }
 }
+
 .header__nav {
   display: flex;
   align-items: center;
@@ -125,6 +127,12 @@
 }
 
 .header-list__contact {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: #757575;
   color: #757575;
   fill: #757575;
   transition: fill 250ms var(--timing-function), color 250ms var(--timing-function);
